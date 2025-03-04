@@ -64,6 +64,7 @@
                 var ev = "";
                 var count = 0;
                 var obj = $("#table_int");
+                var fullcount =0;
 
                 obj.html("");
                 $("<thead class='table-dark'><tr><th>Level</th><th>Title</th><th>Artist</th><th>Comment</th></tr></thead><tbody>")
@@ -78,6 +79,8 @@
                         obj_sep = $("<tr class='table-dark' style='text-align:center' id='" + mark + info[i].level +
                             "'></tr>");
                         obj_sep.appendTo(obj);
+                        fullcount += count;
+                        obj_sep.appendTo(fullcount);
                         count = 0;
                         x = info[i].level;
                     }
