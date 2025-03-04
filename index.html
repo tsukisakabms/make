@@ -55,6 +55,7 @@
                 $.getJSON($("meta[name=bmstable]").attr("content"), function (header) {
                     $.getJSON(header.data_url, function (information) {
                         makeBMSTable(information, header.symbol);
+                        obj_sep.html("<td colspan='4'>" + "<b>" + mark + x + " (" + fullcount +"譜面)</b></td>");
                     });
                 });
             });
@@ -110,7 +111,6 @@
                     obj_sep.html("<td class='table-dark' style='text-align:center' colspan='4'>" + "<b>" + mark + x +
                         " (" + count + "譜面)</b></td>");
                 }
-                obj_sep.html("<td colspan='4'>" + "<b>" + mark + x + " (" + fullcount +"譜面)</b></td>");
             }
         </script>
     </div>
