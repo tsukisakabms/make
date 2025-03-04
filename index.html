@@ -63,6 +63,7 @@
                 var x = "";
                 var ev = "";
                 var count = 0;
+                //var count = 0;
                 var obj = $("#table_int");
 
                 obj.html("");
@@ -73,7 +74,7 @@
                     if (x != info[i].level) {
                         if (obj_sep != null) {
                             obj_sep.html("<td colspan='4'>" + "<b>" + mark + x + " (" + count +
-                                "譜面??)</b></td>");
+                                "譜面)</b></td>");
                         }
                         obj_sep = $("<tr class='table-dark' style='text-align:center' id='" + mark + info[i].level +
                             "'></tr>");
